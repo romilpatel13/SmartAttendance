@@ -9,4 +9,11 @@ This is a Smart Attendance Mobile Application based on Speech Recgnition.
 
 Built Using Xamarin for Android
 
-Screen Shots :
+ScreenShots :
+
+
+![screenshot_2018-12-02-16-57-02 2](https://user-images.githubusercontent.com/37608167/49347388-f2c91c80-f66b-11e8-8d15-f4adba699647.jpg)
+![screenshot_2018-12-02-17-03-17](https://user-images.githubusercontent.com/37608167/49347400-18562600-f66c-11e8-9f79-25ed839a15f7.jpg)
+
+
+
