@@ -199,11 +199,11 @@ namespace SmartAttendance
             await LoadData();
         }
 
-        private async void UpdateUser(string uid, string name, string email)
+        private async void UpdateUser(string uid, string sid, string status)
         {
             var firebase = new FirebaseClient(FirebaseURL);
-            await firebase.Child("users").Child(uid).Child("name").PutAsync(name);
-            await firebase.Child("users").Child(uid).Child("email").PutAsync(email);
+            await firebase.Child("users").Child(uid).Child("sid").PutAsync(sid);
+            await firebase.Child("users").Child(uid).Child("status").PutAsync(status);
 
             await LoadData();
         }
