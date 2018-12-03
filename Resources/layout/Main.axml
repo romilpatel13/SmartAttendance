@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:titleTextColor="@android:color/white"
+    />
+	<ImageView
+		android:id="@+id/imgb"
+		    android:layout_below="@+id/toolbar"
+		android:src="@drawable/thumbnail_logo"
+		android:layout_width="150px"
+    android:layout_height="150px"
+		android:layout_centerHorizontal="true"
+	/>
+
+  <android.support.design.widget.TextInputLayout
+    android:layout_below="@id/imgb"
+    android:id="@+id/txtSid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <EditText
+      android:id="@+id/sid"
+      android:hint="Student Id"
+      android:inputType="textCapWords"
+      android:maxLines="1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+    
+  </android.support.design.widget.TextInputLayout>
+
+  <android.support.design.widget.TextInputLayout
+   android:layout_below="@+id/txtSid"
+   android:id="@+id/txtStatus"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    >
+
+    <EditText
+      android:id="@+id/status"
+      android:hint="Present or Absent"
+      android:inputType="textCapWords"
+      android:maxLines="1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+		<Button
+		
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:id="@+id/btnRecord"	
+			android:background="@drawable/ic_mic"
+			android:layout_gravity="center_vertical|center_horizontal"
+		/>
+		<TextView
+		android:id="@+id/rec_text"
+		android:text=" "
+		android:textStyle="bold"
+		android:textSize="15sp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+    />
+  </android.support.design.widget.TextInputLayout>
+
+
+  <ListView
+    android:id="@+id/list_data"
+    android:layout_below="@+id/txtEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+
+  <ProgressBar
+    android:id="@+id/circularProgress"
+    android:visibility="invisible"
+    android:layout_centerInParent="true"
+    android:theme="@style/CircularProgress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.ProgressBar"
+    />
+  
+</RelativeLayout>

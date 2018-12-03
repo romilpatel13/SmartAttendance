@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+	<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    app:titleTextColor="@android:color/white"
+    />
+	<ImageView
+		android:src="@drawable/thumbnail_logo"
+		android:layout_width="250px"
+    android:layout_height="250px"
+		android:layout_gravity="center_vertical|center_horizontal"
+	/>
+	<TextView
+	android:text="Smart Attendance - Login"
+	android:layout_gravity="center_vertical|center_horizontal"
+	android:textSize="25sp"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+		
+	/>
+	<EditText
+      android:id="@+id/inst_id"
+      android:hint="Enter Instructor Id"
+      android:inputType="textCapWords"
+      android:maxLines="1"
+		android:paddingTop="50px"
+		android:layout_gravity="center_vertical|center_horizontal"
+      android:layout_width="400px"
+      android:layout_height="wrap_content"
+      />
+	<EditText
+      android:id="@+id/inst_pwd"
+      android:hint="Enter Instructor Password"
+      android:inputType="textPassword"
+      android:maxLines="1"
+		android:paddingTop="25px"
+		
+		android:layout_gravity="center_vertical|center_horizontal"
+      android:layout_width="400px"
+      android:layout_height="wrap_content"
+      />
+	<Button
+		android:id="@+id/btn"
+      
+      android:text="Submit"
+		
+	android:background="@android:color/holo_blue_bright"
+      android:layout_gravity="center_vertical|center_horizontal"
+      android:layout_width="100px"
+      android:layout_height="wrap_content"
+		
+		/>
+</LinearLayout>
