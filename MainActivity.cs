@@ -55,6 +55,7 @@ namespace SmartAttendance
             list_data = FindViewById<ListView>(Resource.Id.list_data);
             list_data.ItemClick += (s, e) =>
             {
+                
                 Account acc = list_users[e.Position];
                 selectedAccount = acc;
                 input_id.Text = acc.sid;
